@@ -1,1 +1,6 @@
 compras
+
+Lista de las mismas
+
+banana
+zanahoria
