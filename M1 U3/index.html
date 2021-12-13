@@ -9,11 +9,15 @@
 </head>
 <body>
 
+<div class="presentacion">
 
     <h1 class="presentacion-nombre">Matias Francisco Robles</h1>
-    <img src="../M1 U3/img/pexels" alt="Foto perfil" height="400" width="400" >
-
+    <img src="../M1 U3/img/pexels" alt="Foto perfil" height="410" width="400" class="presentacion-imagen" >
     
+</div>
+
+
+<div class="descripcion">
 
     <h3>Edad: 32 años</h3>
 
@@ -36,14 +40,16 @@
     </ol>
 
     
-       
+    
     <h3>Perfil</h3>
 
     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque voluptates dolore placeat, harum est nesciunt natus mollitia, voluptatum nisi deleniti commodi earum praesentium aliquid at! Autem cum id culpa. Obcaecati?</p>
     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi accusamus voluptatum distinctio ea ex dolorem voluptatem id laboriosam! Odit fugiat quam inventore doloremque libero sit sequi quos accusantium repudiandae consectetur?</p>
     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam omnis, repellat reprehenderit quo explicabo alias velit, magni dolore nemo in corrupti magnam atque. Vitae, obcaecati labore. Iste deserunt vel possimus!</p>
 
-       
+</div>       
+
+<div class="formulario">
 
 <form action="" method="get">
 
@@ -51,10 +57,41 @@
 <p> <br><br> Si queres contactarme, completa el siguiente formulario</p>
             <label for="nombre">Ingrese su nombre</label>    
             <input type="text" placeholder="Escribe tu nombre" id="nombre">
-    
+            <input type="button" value="cargar">
 
-</form>
+        </form>
 
+            <br><br>
+            <label for="sexo">Sexo</label>
+            <ul>
+              <li>
+                 <input type="radio" name="sexo" vale="mujer">
+                 <label>Hombre</label>
+              </li>
+              <li>
+                 <input type="radio" name="sexo" value="mujer">
+                 <label>Mujer</label>
+              </li>
+              </ul> 
+
+              <label> Hobbies </label>
+<ul>
+  <li>
+     <input type="checkbox" name="hobbies[]" vale="bailar" id="bailar">
+     <label for="bailar">Bailar</label>
+  </li>
+  <li>
+     <input type="checkbox" name="hobbies[]" value="cantar" id="cantar">
+     <label>cantar</label>
+  </li>
+ <li>
+     <input type="checkbox" name="hobbies[]" value="nadar" id="nadar">
+     <label>nadar</label>
+  </li>
+  </ul>  
+
+
+</div>
 
 </body>
 </html>
