@@ -18,10 +18,19 @@ img {
 }
 
 .descripcion {
-    height: 400px;
+    height: 600px;
     margin-top: 100px;
 }
 
 .formulario {
-    margin-top: 100px;
+    margin-top: 50px;
+}
+
+.boton:hover {
+    cursor: pointer;
+}
+
+.formulario-links a:hover {
+    cursor: pointer;
+    color: red;
 }
