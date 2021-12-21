@@ -10,15 +10,16 @@ img {
     width: 100%;
 }
 
-.presentacion {
+.presentacion-imagen {
     height: 400px;
     width: 400px;
 
 }
 
 .descripcion {
-    height: 600px;
-    margin-top: 100px;
+    height: 650px;
+    margin-top: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .formulario {
@@ -27,9 +28,20 @@ img {
 
 .boton:hover {
     cursor: pointer;
+    box-shadow: 0 0 5px black;
 }
 
 .formulario-links a:hover {
     cursor: pointer;
     color: red;
 }
+
+p {
+    font-family: 'Open Sans', sans-serif;
+    column-count: 2;
+}
+
+h4{
+    font-family: sans-serif;
+}
+
