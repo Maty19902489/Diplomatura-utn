@@ -17,13 +17,13 @@ img {
 }
 
 .descripcion {
-    height: 650px;
+    height: 750px;
     margin-top: 30px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .formulario {
-    margin-top: 50px;
+    margin-top: 25px;
 }
 
 .boton:hover {
