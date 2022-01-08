@@ -87,3 +87,9 @@
     h2 {
         color:white;
     }
+
+    @media screen and (max-width: 600px) {
+       .contenedor {
+           flex-direction: column;
+        }
+    }
