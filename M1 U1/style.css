@@ -1,7 +1,9 @@
 
 body {
     background-image: linear-gradient(180deg, #cbffdc 0, #baffdc 16.67%, #abffda 33.33%, #9df2d5 50%, #92e3cf 66.67%, #89d5c9 83.33%, #83c9c4 100%);
-    
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
 }
 
 img {
@@ -17,7 +19,7 @@ img {
 }
 
 .descripcion {
-    height: 750px;
+    
     margin-top: 30px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }

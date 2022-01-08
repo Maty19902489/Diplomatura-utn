@@ -5,33 +5,71 @@
     
     }
 
-    body{
-        margin-top: 13%;
-        display:flex;
-        justify-content: center;
-        align-items: center;
-    }
-    
     .contenedor {
         display: flex;
         flex-direction: row-reverse;
-        
+        margin: 0 auto;
+        align-items: center;
+        width: 450px;
+        height: 450px;
     }
     
     .contenedor-caja1 {
         background-color: red;
-        width:200px;
-        height:200px;
+        width: 150px;
+        height: 150px;
         display: flex;
         align-items: center;
         justify-content: center;
     }
     
+    .contenedor-caja1:hover
+    {
+        border: solid 1px black;
+        transform: rotate(-25deg);
+        animation: BGcolorChanging-6colors 10s  linear infinite alternate both;
+    }
+
+@keyframes BGcolorChanging-6colors {
+0% {
+    background-color: pink;
+}
+20% {
+    background-color: yellow;
+}
+40% {
+    background-color: red;
+}
+60% {
+    background-color: blue;
+}
+80% {
+    background-color: white;
+}
+100% { 
+    background-color: black;
+}
+}
+
+    .contenedor-caja2:hover
+    {
+        background-color: yellow;
+        border: solid 1px black;
+        transform: translate(0, -10px);
+    }
+
+    .contenedor-caja3:hover
+    {
+        background-color: purple;
+        border: solid 1px black;
+        transition: all 0.5s ease;
+        transform: translate(-10px, 10px);
+    }
     
     .contenedor-caja2 {
         background-color:blue;
-        width:200px;
-        height:200px;
+        width: 150px;
+        height: 150px;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -39,8 +77,8 @@
     
     .contenedor-caja3 {
         background-color: green;
-        width:200px;
-        height:200px;
+        width: 150px;
+        height: 150px;
         display: flex;
         align-items: center;
         justify-content: center;
