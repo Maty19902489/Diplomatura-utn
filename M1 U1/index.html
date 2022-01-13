@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300;1,400&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <title>Curriculum Vitae</title>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -16,16 +17,22 @@
 <div class="presentacion">
 
     <h1 class="presentacion-nombre">Matias Francisco Robles</h1>
-    <img src="../M1 U3/img/pexels" alt="Foto perfil" height="410" width="400" class="presentacion-imagen">
+
+    <div class="card" style="width: 18rem;">
+        <img src="../M1 U1/img/pexels.png" class="card-img-top" alt="presentacion-imagen" width="400px">
+        <div class="card-body">
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+      </div>
     
 </div>
 
 
 <div class="descripcion">
 
-    <h3>Edad: 32 años</h3>
+    <h4>Edad: 32 años</h4>
 
-    <h3>Domicilio: Yatay 12, Piso 12 depto A</h3>
+    <h4>Domicilio: Yatay 12, Piso 12 depto A</h4>
 
     <h3>¿Que series me gustan?</h3>
 
@@ -48,10 +55,23 @@
 <div class="descripcion-perfil">
     <h3>Perfil</h3>
 
-    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque voluptates dolore placeat, harum est nesciunt natus mollitia, voluptatum nisi deleniti commodi earum praesentium aliquid at! Autem cum id culpa. Obcaecati?</p>
-    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi accusamus voluptatum distinctio ea ex dolorem voluptatem id laboriosam! Odit fugiat quam inventore doloremque libero sit sequi quos accusantium repudiandae consectetur?</p>
-    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam omnis, repellat reprehenderit quo explicabo alias velit, magni dolore nemo in corrupti magnam atque. Vitae, obcaecati labore. Iste deserunt vel possimus!</p>
+    <div class="container">
+        <div class="row align-items-start">
+          <div class="col">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis fugiat optio veniam, accusantium mollitia corporis vero hic dolore molestiae. Adipisci esse ab quam reiciendis enim incidunt eveniet facilis voluptatum dolore?
+          </div>
 
+          <div class="col">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis fugiat optio veniam, accusantium mollitia corporis vero hic dolore molestiae. Adipisci esse ab quam reiciendis enim incidunt eveniet facilis voluptatum dolore?
+          </div>
+
+          <div class="col">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, architecto in possimus minima provident deserunt hic recusandae cum eveniet perspiciatis reprehenderit maiores sequi alias doloremque unde itaque quas distinctio inventore?
+        </div>
+
+        </div>
+    </div>
+    
     <h3 class="estudios">Estudios</h3>
      
     <ul>
@@ -104,7 +124,8 @@
 <h4> <br><br> Si queres contactarme, completa el siguiente formulario</h4>
             <label for="nombre">Ingrese su nombre</label>    
             <input type="text" placeholder="Escribe tu nombre" id="nombre">
-            <input type="button" value="Cargar" class="boton">
+            <!-- aplico boton sacado de bootstrap -->
+            <button type="button" class="btn btn-primary">Cargar</button>
 
         </form>
 
@@ -147,6 +168,8 @@
 
 
 </div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
 </body>
 </html>

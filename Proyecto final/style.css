@@ -1,0 +1,16 @@
+:root {
+    --Negro: #282623;
+    --font-sanz: 'Dm Sans', sans-serif;
+    --font-inter: 'Inter', sans-serif;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: var(--font-sanz), sans-serif;
+}
