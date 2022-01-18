@@ -1,7 +1,8 @@
 :root {
-    --Negro: #282623;
-    --font-sanz: 'Dm Sans', sans-serif;
-    --font-inter: 'Inter', sans-serif;
+    --Negro: #2F2C2C;
+    --fuente: 'Montserrat', sans-serif;
+    --Rojo: #E80B39;
+    --blanco: white;
 }
 
 *{
@@ -10,7 +11,77 @@
     box-sizing: border-box;
 }
 
-html {
+body {
     font-size: 62.5%;
-    font-family: var(--font-sanz), sans-serif;
+    font-family: var(--fuente);
+}
+
+a {
+    text-decoration: none;
+    color: var(--blanco);
+}
+
+header {
+    height: 150px;
+    width: 100%;
+    background-color: var(--Negro);
+   display: flex;
+   justify-content: space-between;
+   
+}
+
+.header__nav {
+width: 100%;
+display: flex;
+/* alinea perfil experienc etc en el centro */
+align-items: center;
+justify-content: space-between;
+margin: 0 auto;
+max-width: 1500px;
+position: fixed;
+background-color: var(--Negro);
+
+/* ese top y left es por recomendacion, para que no se 
+modifique el nav cuando agregemos contenido en el main */
+}
+
+.header__image--container {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.header__img {
+height: 150px;
+}
+
+.header__titulo {
+    color: var(--blanco);
+   
+}
+
+h1 {
+    margin-top: 15px;
+    height: 40px;
+    font-size: 18px;
+}
+
+/* menu */
+
+.header__menu {
+    display: flex;
+list-style: none;
+margin: 0 auto;
+}
+
+.header__menu li {
+    padding: 0 15px;
+}
+
+
+.header__menu a {
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: uppercase;
+
 }
