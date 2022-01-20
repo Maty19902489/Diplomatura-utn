@@ -3,6 +3,7 @@
     --fuente: 'Montserrat', sans-serif;
     --Rojo: #E80B39;
     --blanco: white;
+    --Gris: #595b5f;
 }
 
 *{
@@ -22,7 +23,7 @@ a {
 }
 
 header {
-    height: 150px;
+    
     width: 100%;
     background-color: var(--Negro);
    display: flex;
@@ -40,6 +41,7 @@ margin: 0 auto;
 max-width: 1500px;
 position: fixed;
 background-color: var(--Negro);
+height: 160px;
 
 /* ese top y left es por recomendacion, para que no se 
 modifique el nav cuando agregemos contenido en el main */
@@ -83,5 +85,65 @@ margin: 0 auto;
     font-size: 18px;
     font-weight: 500;
     text-transform: uppercase;
+
+}
+
+.open__menu-img,
+.close__menu-img
+{
+    height: 50px;
+    }
+
+button {
+    display: none;
+}
+
+@media (max-width: 950px) {
+
+    .header__menu {
+        flex-direction: column;
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        align-items: center;
+        background-color: var(--Gris);
+        height: 100%;
+        overflow-y: auto; /* pone una barra cuando el contenido esta muy apretado */
+        opacity: 0;
+        
+    }
+
+
+    .header__menu li {
+        margin-top: 35px;
+    }
+
+    
+.close__menu,
+.open__menu
+{
+    height: 52px;
+    display: flex;
+    background: none;
+    border: none;
+    cursor: pointer;
+    
+}
+
+.close__menu {
+    align-self: flex-end;
+    padding: 20px 15px;
+}
+
+.open__menu {
+    align-self: flex-start;
+    padding: 20px 15px;
+ 
+}
+
+.menu_opened {
+    opacity: 1;
+}
 
 }
