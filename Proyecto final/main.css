@@ -1,0 +1,21 @@
+.main__exchange-img {
+    margin-top: 160px;
+    width: 100%;
+}
+
+.main__exchange-formulario {
+    display: flex;
+    flex-direction: column;
+}
+
+.main__exchange-texto {
+    background-color: var(--celeste);
+    color: var(--blanco);
+    height: 40px;
+    font-size: 15px;
+}
+
+.main__exchange-texto h1 {
+    padding: 4px;
+}
+

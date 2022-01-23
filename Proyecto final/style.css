@@ -4,6 +4,8 @@
     --Rojo: #E80B39;
     --blanco: white;
     --Gris: #595b5f;
+    --azul: #2A17B4;
+    --celeste: #4B9EF2;
 }
 
 *{
@@ -25,7 +27,7 @@ a {
 header {
     
     width: 100%;
-    background-color: var(--Negro);
+    
    display: flex;
    justify-content: space-between;
    
@@ -40,7 +42,7 @@ justify-content: space-between;
 margin: 0 auto;
 max-width: 1500px;
 position: fixed;
-background-color: var(--Negro);
+background-color: var(--azul);
 height: 160px;
 
 /* ese top y left es por recomendacion, para que no se 
@@ -51,29 +53,27 @@ modifique el nav cuando agregemos contenido en el main */
     display: flex;
     align-items: center;
     margin: 0 auto;
+cursor: pointer;
 }
 
 .header__img {
-height: 150px;
+height: 160px;
 }
 
-.header__titulo {
+.header__titulo h1 {
     color: var(--blanco);
-   
-}
-
-h1 {
     margin-top: 15px;
     height: 40px;
     font-size: 18px;
+    margin-left: 15px;
 }
 
 /* menu */
 
 .header__menu {
     display: flex;
-list-style: none;
-margin: 0 auto;
+    list-style: none;
+    margin: 0 auto;
 }
 
 .header__menu li {
@@ -114,6 +114,9 @@ button {
         
     }
 
+    .header__titulo {
+        cursor: pointer;
+    }
 
     .header__menu li {
         margin-top: 35px;
@@ -146,4 +149,10 @@ button {
     opacity: 1;
 }
 
-}
+.open__menu-img {
+color: var(--blanco);
+ }
+
+
+
+} 
