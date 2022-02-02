@@ -58,6 +58,8 @@ cursor: pointer;
 
 .header__img {
 height: 160px;
+border-radius: 60%;
+width: 180px;
 }
 
 .header__titulo h1 {
@@ -94,7 +96,7 @@ height: 160px;
     height: 50px;
     }
 
-button {
+.open__menu, .close__menu {
     display: none;
 }
 
@@ -147,6 +149,10 @@ button {
 
 .menu_opened {
     opacity: 1;
+}
+
+.menu_closed {
+    opacity: 0;
 }
 
 .open__menu-img {

@@ -10,13 +10,14 @@
 .main__exchange-formulario {
     display: flex;
     flex-direction: column;
-    width: 16rem;
-    height: 18.5rem;
+    width: 20rem;
+    height: 24rem;
    margin-top: -60%;
    margin-left: 70%;
    margin-right: 20%;
    border: solid 1px black;
    background-color: white;
+   border: var(--celeste);
    opacity: 0.8;
 }
 
@@ -24,7 +25,9 @@
     background-color: var(--celeste);
     color: var(--blanco);
     height: 40px;
-    font-size: 15px;
+    font-size: 20px;
+    top: 0;
+    
 }
 
 .main__exchange-texto h1 {
@@ -33,31 +36,103 @@
 
 .controles {
     margin-top: 20px;
-    margin-left: 10px;
-    margin-right: 10px;
     padding: 5px;
+    width: 220px;
 }
 
 .controles-container ul {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-between;
+    height: 100%;
 }
 
 .controles-container {
     height: 20rem;
+     }
+
+.controles-ultimo {
+    height: 2rem;
+    width: 15rem;
+    background-color: var(--celeste);
+    margin-top: 20px;
+    border: none;
+    border-radius: 3%;
+    color: var(--blanco);
+    font-size: 30px;
+    }
+
+    .controles-ayuda {
+        margin-top: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 5px;
+    height: 50px;
+    width: 220px;
+    }
+
+.main__exchange-container {
+    height: 800px;
 }
 
+.controles__container-texto {
+    margin-top: -650px;
+    margin-left: 3%;
+    margin-right: 30%;
+    color: var(--blanco);
+    font-weight: bolder;
+    text-shadow: 1px 1px 2px black;
+}
+
+
+    .controles__container-texto h1
+    { 
+font-size: 4em;
+    }
+
+    .controles__container-texto h2
+    { 
+font-size: 3em;
+    }
 
 
 @media (max-width: 900px) {
 
     .main__exchange-container {
-        width: 850px;
+        width: 890px;     
     }
 
     .main__exchange-formulario {
-        margin-left: 5%;
+        margin-left: 1%;
+        margin-top: -490px;
+        margin-right: 1%;
     }
     
-}
+    .controles__container-texto {
+        margin-top: -770px;
+        margin-right: 10px;
+        }
+
+        .image-container {
+            height: 100%;
+        }
+
+    .main__exchange-img {
+    height: 700px;
+    width: 900px;
+    }
+
+    @media (max-width: 445px){
+        .main__exchange-formulario, .main__exchange-texto,
+        .controles-container{
+            opacity: 0;
+        }
+
+
+
+    }
+
+
+
+    }
