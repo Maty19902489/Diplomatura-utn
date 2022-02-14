@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style2.css">
+    <script src="../M3 u2/app2.js"></script>
+</head>
+<body>
+
+    <!-- <div class="box">
+        <textarea rows="3" maxlength="100" id="mensaje"></textarea>
+        <div id="contador">0/100</div>
+      </div> -->
+
+
+      <form action="#" method="post">
+        <table>
+        <tr>
+            <td>Texto:</td>
+            <td><textarea cols="40" rows="5" name="texto" onKeyDown="cuenta()" onKeyUp="cuenta()"></textarea></td>
+        </tr>
+        <tr>
+            <td>Caracteres:</td>
+            <td><input type="text" name=caracteres size=4></td>
+        </tr>
+        </table>
+        </form>
+        <script>
+            function cuenta(){
+                   document.forms[0].caracteres.value=document.forms[0].texto.value.length
+            }
+            </script>
+
+</body>
+</html>
