@@ -1,7 +1,6 @@
 div {
     height: 100px;
-    width: 100px;
-    display: flex;
+    width: 300px;
     cursor: pointer;
 }
 
@@ -13,4 +12,8 @@ background-color:red;
 }
 .caja3{
     background-color: black;
+}
+
+.container {
+    display: flex;
 }
